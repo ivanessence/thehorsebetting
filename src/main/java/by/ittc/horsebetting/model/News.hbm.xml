@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18.04.2014 11:00:43 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="by.ittc.horsebetting.model.News" table="news">
+		<id name="id" column="id" type="int">
+
+			<generator class="increment" />
+		</id>
+		<property name="title" column="title" type="java.lang.String" />
+
+		<property name="text" column="text" type="java.lang.String" />
+
+	</class>
+</hibernate-mapping>

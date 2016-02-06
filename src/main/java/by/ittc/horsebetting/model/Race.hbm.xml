@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="by.ittc.horsebetting.model.Race" table="races">
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="assigned" />
+		</id>
+
+		<property name="horsesId" column="horses" type="java.lang.String" />
+
+
+		<property name="destination" column="destination" type="java.lang.Float" />
+
+
+		<property name="status" column="status" type="java.lang.String" />
+
+		<property name="date" column="date" type="java.lang.String" />
+
+		<property name="coefficients" column="koef" type="java.lang.String" />
+
+		<property name="nameWinnerHorse" column="nameWinnerHorse"
+			type="java.lang.String" />
+
+		<property name="deleted" column="deleted" type="java.lang.Integer" />
+
+		<property name="deletedDate" column="deletedDate" type="java.lang.String" />
+
+	</class>
+</hibernate-mapping>

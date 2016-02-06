@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18.04.2014 11:13:04 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="by.ittc.horsebetting.model.User" table="users"
+		abstract="true">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="assigned" />
+		</id>
+		<discriminator type="string">
+			<column name="DISCR_COL" />
+		</discriminator>
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<property name="lastName" type="java.lang.String">
+			<column name="lastname" />
+		</property>
+		<property name="login" type="java.lang.String">
+			<column name="login" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password" />
+		</property>
+		<property name="mail" type="java.lang.String">
+			<column name="email" />
+		</property>
+		<property name="telephone" type="java.lang.String">
+			<column name="telephone" />
+		</property>
+		<property name="balance" type="float">
+			<column name="balance" />
+		</property>
+		<property name="access" type="java.lang.String">
+			<column name="access" />
+		</property>
+	</class>
+</hibernate-mapping>
